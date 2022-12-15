@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head> 
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Калькулятор</title>
+	</head>
+
+	<body>
+		<div class="calculator">
+			<div class="display__container">
+				<div class="display__screen screen">
+					<div class="screen--small"></div>
+					<div class="screen--big">0</div>
+					<div data-indicate="E" class="screen--big__indicate"></div>	
+
+				</div>
+			</div>
+			<div class="description__toggle">Digit Precision</div>
+			<div class="toggle__list">
+
+				<input type="radio" id="oneDigitPrecision" name="toggle" value="1" checked>
+				<label for="oneDigitPrecision">1</label>
+
+				<input type="radio" id="twoDigitPrecision" name="toggle" value="2">
+				<label for="twoDigitPrecision">2</label>
+
+				<input type="radio" id="threeDigitPrecision" name="toggle" value="3">
+				<label for="threeDigitPrecision">3</label>
+
+				<input type="radio" id="fourDigitPrecision" name="toggle" value="4">
+				<label for="fourDigitPrecision">4</label>
+
+			</div>
+			<ul class="number-pad">
+				<li class="button percent">%</li>
+				<li data-number="(" class="button bracket-left">(</li>
+				<li data-number=")" class="button bracket-right">)</li>
+				<li class="cancel-remove">
+					<div class="button cancel">
+						<div class="cancel__text">C</div>
+					</div>
+					<div class="button remove">
+						<div class="remove__text">Rem</div>
+					</div>
+				</li>
+				<li class="button one-divide-x">&#185/&#8339</li>
+				<li class="button two-squared">x&#178</li>
+				<li class="button square-root">&#8730(x)</li>
+				<li data-operation="/" class="button divide">/</li>
+				<li data-number="7" class="button seven">7</li>
+				<li data-number="8" class="button eight">8</li>
+				<li data-number="9" class="button nine">9</li>
+				<li data-operation="*" class="button multiply">*</li>
+				<li data-number="4" class="button four">4</li>
+				<li data-number="5" class="button five">5</li>
+				<li data-number="6" class="button six">6</li>
+				<li data-operation="-" class="button subtraction">-</li>
+				<li data-number="1" class="button one">1</li>
+				<li data-number="2" class="button two">2</li>
+				<li data-number="3" class="button three">3</li>
+				<li data-operation="+"  class="button addition">+</li>
+				<li data-operation="-" class="button negate">+/-</li>
+				<li data-number="0" class="button zero">0</li>
+				<li data-number="."class="button point">.</li>
+				<li class="button equal">=</li>
+			</ul>
+		</div>	
+		<script src="js/script.js"></script>
+	</body>
+
+	</html>
